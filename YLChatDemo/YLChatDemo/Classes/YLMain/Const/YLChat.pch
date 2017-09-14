@@ -1,0 +1,21 @@
+//
+//  YLChat.pch
+//  YLChatDemo
+//
+//  Created by Apple on 2017/9/14.
+//  Copyright © 2017年 YaLeTeCh. All rights reserved.
+//
+
+#ifndef YLChat_pch
+#define YLChat_pch
+
+
+#define YLUrl  @"http://192.168.0.120:8080/"
+#import <AFNetworking.h>
+#import "SVProgressHUD.h"
+#import "JDStatusBarNotification.h"
+
+
+#define MainStoryboard [UIStoryboard storyboardWithName: @"Main" bundle: nil]
+
+#endif /* YLChat_pch */

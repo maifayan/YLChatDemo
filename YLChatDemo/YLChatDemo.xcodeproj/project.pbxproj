@@ -1,0 +1,902 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		182744DF1F6A75B8006184A1 /* YLMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 182744DE1F6A75B8006184A1 /* YLMessageViewController.m */; };
+		18A851AB1F6A0F7600B54130 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A851AA1F6A0F7600B54130 /* main.m */; };
+		18A851AE1F6A0F7600B54130 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A851AD1F6A0F7600B54130 /* AppDelegate.m */; };
+		18A851B11F6A0F7600B54130 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A851B01F6A0F7600B54130 /* ViewController.m */; };
+		18A851B41F6A0F7600B54130 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18A851B21F6A0F7600B54130 /* Main.storyboard */; };
+		18A851B61F6A0F7600B54130 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18A851B51F6A0F7600B54130 /* Assets.xcassets */; };
+		18A851B91F6A0F7600B54130 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18A851B71F6A0F7600B54130 /* LaunchScreen.storyboard */; };
+		18A851C41F6A0F7600B54130 /* YLChatDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A851C31F6A0F7600B54130 /* YLChatDemoTests.m */; };
+		18A851CF1F6A0F7600B54130 /* YLChatDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A851CE1F6A0F7600B54130 /* YLChatDemoUITests.m */; };
+		18A851EE1F6A147D00B54130 /* YLLogRegController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A851ED1F6A147D00B54130 /* YLLogRegController.m */; };
+		18A851F81F6A2EAF00B54130 /* JDStatusBarNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A851F31F6A2EAF00B54130 /* JDStatusBarNotification.m */; };
+		18A851F91F6A2EAF00B54130 /* JDStatusBarStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A851F51F6A2EAF00B54130 /* JDStatusBarStyle.m */; };
+		18A851FA1F6A2EAF00B54130 /* JDStatusBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A851F71F6A2EAF00B54130 /* JDStatusBarView.m */; };
+		18A852061F6A2ED100B54130 /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A851FD1F6A2ED100B54130 /* SVIndefiniteAnimatedView.m */; };
+		18A852071F6A2ED100B54130 /* SVProgressAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A851FF1F6A2ED100B54130 /* SVProgressAnimatedView.m */; };
+		18A852081F6A2ED100B54130 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 18A852011F6A2ED100B54130 /* SVProgressHUD.bundle */; };
+		18A852091F6A2ED100B54130 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A852031F6A2ED100B54130 /* SVProgressHUD.m */; };
+		18A8520A1F6A2ED100B54130 /* SVRadialGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A852051F6A2ED100B54130 /* SVRadialGradientLayer.m */; };
+		18A852111F6A4EC600B54130 /* YLFriendsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A852101F6A4EC600B54130 /* YLFriendsController.m */; };
+		18A852141F6A514600B54130 /* YLTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A852131F6A514600B54130 /* YLTabBarController.m */; };
+		18A852171F6A518600B54130 /* YLNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A852161F6A518600B54130 /* YLNavigationController.m */; };
+		18A8521A1F6A542200B54130 /* UINavigationBar+Awesome.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A852191F6A542200B54130 /* UINavigationBar+Awesome.m */; };
+		18A8521D1F6A587300B54130 /* YLFriendModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A8521C1F6A587300B54130 /* YLFriendModel.m */; };
+		18A852201F6A5C9900B54130 /* YLFriendsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A8521F1F6A5C9900B54130 /* YLFriendsCell.m */; };
+		18A852221F6A5ED800B54130 /* YLFriendsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18A852211F6A5ED800B54130 /* YLFriendsCell.xib */; };
+		BC5F3392F8943A7165063F44 /* libPods-YLChatDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 59494D68BF6A00540E84D07F /* libPods-YLChatDemo.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		18A851C01F6A0F7600B54130 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18A8519E1F6A0F7600B54130 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18A851A51F6A0F7600B54130;
+			remoteInfo = YLChatDemo;
+		};
+		18A851CB1F6A0F7600B54130 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18A8519E1F6A0F7600B54130 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18A851A51F6A0F7600B54130;
+			remoteInfo = YLChatDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		182744DD1F6A75B8006184A1 /* YLMessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLMessageViewController.h; sourceTree = "<group>"; };
+		182744DE1F6A75B8006184A1 /* YLMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLMessageViewController.m; sourceTree = "<group>"; };
+		18A851A61F6A0F7600B54130 /* YLChatDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YLChatDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		18A851AA1F6A0F7600B54130 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		18A851AC1F6A0F7600B54130 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		18A851AD1F6A0F7600B54130 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		18A851AF1F6A0F7600B54130 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		18A851B01F6A0F7600B54130 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		18A851B31F6A0F7600B54130 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		18A851B51F6A0F7600B54130 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		18A851B81F6A0F7600B54130 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		18A851BA1F6A0F7600B54130 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18A851BF1F6A0F7600B54130 /* YLChatDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YLChatDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		18A851C31F6A0F7600B54130 /* YLChatDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLChatDemoTests.m; sourceTree = "<group>"; };
+		18A851C51F6A0F7600B54130 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18A851CA1F6A0F7600B54130 /* YLChatDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YLChatDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		18A851CE1F6A0F7600B54130 /* YLChatDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLChatDemoUITests.m; sourceTree = "<group>"; };
+		18A851D01F6A0F7600B54130 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18A851EC1F6A147D00B54130 /* YLLogRegController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLLogRegController.h; sourceTree = "<group>"; };
+		18A851ED1F6A147D00B54130 /* YLLogRegController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLLogRegController.m; sourceTree = "<group>"; };
+		18A851F01F6A24A000B54130 /* YLChat.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLChat.pch; sourceTree = "<group>"; };
+		18A851F21F6A2EAF00B54130 /* JDStatusBarNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDStatusBarNotification.h; sourceTree = "<group>"; };
+		18A851F31F6A2EAF00B54130 /* JDStatusBarNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDStatusBarNotification.m; sourceTree = "<group>"; };
+		18A851F41F6A2EAF00B54130 /* JDStatusBarStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDStatusBarStyle.h; sourceTree = "<group>"; };
+		18A851F51F6A2EAF00B54130 /* JDStatusBarStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDStatusBarStyle.m; sourceTree = "<group>"; };
+		18A851F61F6A2EAF00B54130 /* JDStatusBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDStatusBarView.h; sourceTree = "<group>"; };
+		18A851F71F6A2EAF00B54130 /* JDStatusBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDStatusBarView.m; sourceTree = "<group>"; };
+		18A851FC1F6A2ED100B54130 /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
+		18A851FD1F6A2ED100B54130 /* SVIndefiniteAnimatedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVIndefiniteAnimatedView.m; sourceTree = "<group>"; };
+		18A851FE1F6A2ED100B54130 /* SVProgressAnimatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressAnimatedView.h; sourceTree = "<group>"; };
+		18A851FF1F6A2ED100B54130 /* SVProgressAnimatedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressAnimatedView.m; sourceTree = "<group>"; };
+		18A852001F6A2ED100B54130 /* SVProgressHUD-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-Prefix.pch"; sourceTree = "<group>"; };
+		18A852011F6A2ED100B54130 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
+		18A852021F6A2ED100B54130 /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
+		18A852031F6A2ED100B54130 /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
+		18A852041F6A2ED100B54130 /* SVRadialGradientLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVRadialGradientLayer.h; sourceTree = "<group>"; };
+		18A852051F6A2ED100B54130 /* SVRadialGradientLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVRadialGradientLayer.m; sourceTree = "<group>"; };
+		18A8520F1F6A4EC600B54130 /* YLFriendsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLFriendsController.h; sourceTree = "<group>"; };
+		18A852101F6A4EC600B54130 /* YLFriendsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLFriendsController.m; sourceTree = "<group>"; };
+		18A852121F6A514600B54130 /* YLTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLTabBarController.h; sourceTree = "<group>"; };
+		18A852131F6A514600B54130 /* YLTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLTabBarController.m; sourceTree = "<group>"; };
+		18A852151F6A518600B54130 /* YLNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLNavigationController.h; sourceTree = "<group>"; };
+		18A852161F6A518600B54130 /* YLNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLNavigationController.m; sourceTree = "<group>"; };
+		18A852181F6A542200B54130 /* UINavigationBar+Awesome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+Awesome.h"; sourceTree = "<group>"; };
+		18A852191F6A542200B54130 /* UINavigationBar+Awesome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+Awesome.m"; sourceTree = "<group>"; };
+		18A8521B1F6A587300B54130 /* YLFriendModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLFriendModel.h; sourceTree = "<group>"; };
+		18A8521C1F6A587300B54130 /* YLFriendModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLFriendModel.m; sourceTree = "<group>"; };
+		18A8521E1F6A5C9900B54130 /* YLFriendsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLFriendsCell.h; sourceTree = "<group>"; };
+		18A8521F1F6A5C9900B54130 /* YLFriendsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLFriendsCell.m; sourceTree = "<group>"; };
+		18A852211F6A5ED800B54130 /* YLFriendsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YLFriendsCell.xib; sourceTree = "<group>"; };
+		59494D68BF6A00540E84D07F /* libPods-YLChatDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YLChatDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7990F2657A5F8D3A8D772105 /* Pods-YLChatDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YLChatDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-YLChatDemo/Pods-YLChatDemo.release.xcconfig"; sourceTree = "<group>"; };
+		B647E3F3018067D4424A6330 /* Pods-YLChatDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YLChatDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YLChatDemo/Pods-YLChatDemo.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		18A851A31F6A0F7600B54130 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC5F3392F8943A7165063F44 /* libPods-YLChatDemo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18A851BC1F6A0F7600B54130 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18A851C71F6A0F7600B54130 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		18A8519D1F6A0F7600B54130 = {
+			isa = PBXGroup;
+			children = (
+				18A851A81F6A0F7600B54130 /* YLChatDemo */,
+				18A851C21F6A0F7600B54130 /* YLChatDemoTests */,
+				18A851CD1F6A0F7600B54130 /* YLChatDemoUITests */,
+				18A851A71F6A0F7600B54130 /* Products */,
+				F879AA0DBE8CDA72AAFA90DA /* Pods */,
+				1A8B8998903A60E65F2E12D4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		18A851A71F6A0F7600B54130 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				18A851A61F6A0F7600B54130 /* YLChatDemo.app */,
+				18A851BF1F6A0F7600B54130 /* YLChatDemoTests.xctest */,
+				18A851CA1F6A0F7600B54130 /* YLChatDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		18A851A81F6A0F7600B54130 /* YLChatDemo */ = {
+			isa = PBXGroup;
+			children = (
+				18A851AC1F6A0F7600B54130 /* AppDelegate.h */,
+				18A851AD1F6A0F7600B54130 /* AppDelegate.m */,
+				18A851AF1F6A0F7600B54130 /* ViewController.h */,
+				18A851B01F6A0F7600B54130 /* ViewController.m */,
+				18A851B21F6A0F7600B54130 /* Main.storyboard */,
+				18A851B51F6A0F7600B54130 /* Assets.xcassets */,
+				18A851DC1F6A138D00B54130 /* Classes */,
+				18A851B71F6A0F7600B54130 /* LaunchScreen.storyboard */,
+				18A851BA1F6A0F7600B54130 /* Info.plist */,
+				18A851A91F6A0F7600B54130 /* Supporting Files */,
+			);
+			path = YLChatDemo;
+			sourceTree = "<group>";
+		};
+		18A851A91F6A0F7600B54130 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				18A851AA1F6A0F7600B54130 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		18A851C21F6A0F7600B54130 /* YLChatDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				18A851C31F6A0F7600B54130 /* YLChatDemoTests.m */,
+				18A851C51F6A0F7600B54130 /* Info.plist */,
+			);
+			path = YLChatDemoTests;
+			sourceTree = "<group>";
+		};
+		18A851CD1F6A0F7600B54130 /* YLChatDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				18A851CE1F6A0F7600B54130 /* YLChatDemoUITests.m */,
+				18A851D01F6A0F7600B54130 /* Info.plist */,
+			);
+			path = YLChatDemoUITests;
+			sourceTree = "<group>";
+		};
+		18A851DC1F6A138D00B54130 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				18A8520B1F6A4E8000B54130 /* YLFriends */,
+				18A851DD1F6A138D00B54130 /* YLChat */,
+				18A851E11F6A138D00B54130 /* YLLogReg */,
+				18A851E51F6A138D00B54130 /* YLMain */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		18A851DD1F6A138D00B54130 /* YLChat */ = {
+			isa = PBXGroup;
+			children = (
+				18A851DE1F6A138D00B54130 /* Controller */,
+				18A851DF1F6A138D00B54130 /* Model */,
+				18A851E01F6A138D00B54130 /* View */,
+			);
+			path = YLChat;
+			sourceTree = "<group>";
+		};
+		18A851DE1F6A138D00B54130 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				182744DD1F6A75B8006184A1 /* YLMessageViewController.h */,
+				182744DE1F6A75B8006184A1 /* YLMessageViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		18A851DF1F6A138D00B54130 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		18A851E01F6A138D00B54130 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		18A851E11F6A138D00B54130 /* YLLogReg */ = {
+			isa = PBXGroup;
+			children = (
+				18A851E21F6A138D00B54130 /* Controller */,
+				18A851E31F6A138D00B54130 /* Model */,
+				18A851E41F6A138D00B54130 /* View */,
+			);
+			path = YLLogReg;
+			sourceTree = "<group>";
+		};
+		18A851E21F6A138D00B54130 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				18A851EC1F6A147D00B54130 /* YLLogRegController.h */,
+				18A851ED1F6A147D00B54130 /* YLLogRegController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		18A851E31F6A138D00B54130 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		18A851E41F6A138D00B54130 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		18A851E51F6A138D00B54130 /* YLMain */ = {
+			isa = PBXGroup;
+			children = (
+				18A851E61F6A138D00B54130 /* Category */,
+				18A851E71F6A138D00B54130 /* Const */,
+				18A851E81F6A138D00B54130 /* Controller */,
+				18A851E91F6A138D00B54130 /* Lib */,
+				18A851EA1F6A138D00B54130 /* Model */,
+				18A851EB1F6A138D00B54130 /* View */,
+			);
+			path = YLMain;
+			sourceTree = "<group>";
+		};
+		18A851E61F6A138D00B54130 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				18A852181F6A542200B54130 /* UINavigationBar+Awesome.h */,
+				18A852191F6A542200B54130 /* UINavigationBar+Awesome.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		18A851E71F6A138D00B54130 /* Const */ = {
+			isa = PBXGroup;
+			children = (
+				18A851F01F6A24A000B54130 /* YLChat.pch */,
+			);
+			path = Const;
+			sourceTree = "<group>";
+		};
+		18A851E81F6A138D00B54130 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				18A852121F6A514600B54130 /* YLTabBarController.h */,
+				18A852131F6A514600B54130 /* YLTabBarController.m */,
+				18A852151F6A518600B54130 /* YLNavigationController.h */,
+				18A852161F6A518600B54130 /* YLNavigationController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		18A851E91F6A138D00B54130 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				18A851FB1F6A2ED100B54130 /* SVProgressHUD */,
+				18A851F11F6A2EAF00B54130 /* JDStatusBarNotification */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		18A851EA1F6A138D00B54130 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		18A851EB1F6A138D00B54130 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		18A851F11F6A2EAF00B54130 /* JDStatusBarNotification */ = {
+			isa = PBXGroup;
+			children = (
+				18A851F21F6A2EAF00B54130 /* JDStatusBarNotification.h */,
+				18A851F31F6A2EAF00B54130 /* JDStatusBarNotification.m */,
+				18A851F41F6A2EAF00B54130 /* JDStatusBarStyle.h */,
+				18A851F51F6A2EAF00B54130 /* JDStatusBarStyle.m */,
+				18A851F61F6A2EAF00B54130 /* JDStatusBarView.h */,
+				18A851F71F6A2EAF00B54130 /* JDStatusBarView.m */,
+			);
+			path = JDStatusBarNotification;
+			sourceTree = "<group>";
+		};
+		18A851FB1F6A2ED100B54130 /* SVProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				18A851FC1F6A2ED100B54130 /* SVIndefiniteAnimatedView.h */,
+				18A851FD1F6A2ED100B54130 /* SVIndefiniteAnimatedView.m */,
+				18A851FE1F6A2ED100B54130 /* SVProgressAnimatedView.h */,
+				18A851FF1F6A2ED100B54130 /* SVProgressAnimatedView.m */,
+				18A852001F6A2ED100B54130 /* SVProgressHUD-Prefix.pch */,
+				18A852011F6A2ED100B54130 /* SVProgressHUD.bundle */,
+				18A852021F6A2ED100B54130 /* SVProgressHUD.h */,
+				18A852031F6A2ED100B54130 /* SVProgressHUD.m */,
+				18A852041F6A2ED100B54130 /* SVRadialGradientLayer.h */,
+				18A852051F6A2ED100B54130 /* SVRadialGradientLayer.m */,
+			);
+			path = SVProgressHUD;
+			sourceTree = "<group>";
+		};
+		18A8520B1F6A4E8000B54130 /* YLFriends */ = {
+			isa = PBXGroup;
+			children = (
+				18A8520C1F6A4E8000B54130 /* Controller */,
+				18A8520D1F6A4E8000B54130 /* Model */,
+				18A8520E1F6A4E8000B54130 /* View */,
+			);
+			path = YLFriends;
+			sourceTree = "<group>";
+		};
+		18A8520C1F6A4E8000B54130 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				18A8520F1F6A4EC600B54130 /* YLFriendsController.h */,
+				18A852101F6A4EC600B54130 /* YLFriendsController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		18A8520D1F6A4E8000B54130 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				18A8521B1F6A587300B54130 /* YLFriendModel.h */,
+				18A8521C1F6A587300B54130 /* YLFriendModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		18A8520E1F6A4E8000B54130 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				18A8521E1F6A5C9900B54130 /* YLFriendsCell.h */,
+				18A8521F1F6A5C9900B54130 /* YLFriendsCell.m */,
+				18A852211F6A5ED800B54130 /* YLFriendsCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1A8B8998903A60E65F2E12D4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				59494D68BF6A00540E84D07F /* libPods-YLChatDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F879AA0DBE8CDA72AAFA90DA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B647E3F3018067D4424A6330 /* Pods-YLChatDemo.debug.xcconfig */,
+				7990F2657A5F8D3A8D772105 /* Pods-YLChatDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		18A851A51F6A0F7600B54130 /* YLChatDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18A851D31F6A0F7600B54130 /* Build configuration list for PBXNativeTarget "YLChatDemo" */;
+			buildPhases = (
+				D2B99B038CC7A138D4357F31 /* [CP] Check Pods Manifest.lock */,
+				18A851A21F6A0F7600B54130 /* Sources */,
+				18A851A31F6A0F7600B54130 /* Frameworks */,
+				18A851A41F6A0F7600B54130 /* Resources */,
+				DD418C16D391A3A45CDCB080 /* [CP] Embed Pods Frameworks */,
+				A9B7AEFDAD77AB371D342A82 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YLChatDemo;
+			productName = YLChatDemo;
+			productReference = 18A851A61F6A0F7600B54130 /* YLChatDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		18A851BE1F6A0F7600B54130 /* YLChatDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18A851D61F6A0F7600B54130 /* Build configuration list for PBXNativeTarget "YLChatDemoTests" */;
+			buildPhases = (
+				18A851BB1F6A0F7600B54130 /* Sources */,
+				18A851BC1F6A0F7600B54130 /* Frameworks */,
+				18A851BD1F6A0F7600B54130 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18A851C11F6A0F7600B54130 /* PBXTargetDependency */,
+			);
+			name = YLChatDemoTests;
+			productName = YLChatDemoTests;
+			productReference = 18A851BF1F6A0F7600B54130 /* YLChatDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		18A851C91F6A0F7600B54130 /* YLChatDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18A851D91F6A0F7600B54130 /* Build configuration list for PBXNativeTarget "YLChatDemoUITests" */;
+			buildPhases = (
+				18A851C61F6A0F7600B54130 /* Sources */,
+				18A851C71F6A0F7600B54130 /* Frameworks */,
+				18A851C81F6A0F7600B54130 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18A851CC1F6A0F7600B54130 /* PBXTargetDependency */,
+			);
+			name = YLChatDemoUITests;
+			productName = YLChatDemoUITests;
+			productReference = 18A851CA1F6A0F7600B54130 /* YLChatDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		18A8519E1F6A0F7600B54130 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = YL;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = YaLeTeCh;
+				TargetAttributes = {
+					18A851A51F6A0F7600B54130 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 363VLMZMY4;
+						ProvisioningStyle = Automatic;
+					};
+					18A851BE1F6A0F7600B54130 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 363VLMZMY4;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 18A851A51F6A0F7600B54130;
+					};
+					18A851C91F6A0F7600B54130 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 363VLMZMY4;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 18A851A51F6A0F7600B54130;
+					};
+				};
+			};
+			buildConfigurationList = 18A851A11F6A0F7600B54130 /* Build configuration list for PBXProject "YLChatDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 18A8519D1F6A0F7600B54130;
+			productRefGroup = 18A851A71F6A0F7600B54130 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				18A851A51F6A0F7600B54130 /* YLChatDemo */,
+				18A851BE1F6A0F7600B54130 /* YLChatDemoTests */,
+				18A851C91F6A0F7600B54130 /* YLChatDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		18A851A41F6A0F7600B54130 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18A851B91F6A0F7600B54130 /* LaunchScreen.storyboard in Resources */,
+				18A852221F6A5ED800B54130 /* YLFriendsCell.xib in Resources */,
+				18A851B61F6A0F7600B54130 /* Assets.xcassets in Resources */,
+				18A851B41F6A0F7600B54130 /* Main.storyboard in Resources */,
+				18A852081F6A2ED100B54130 /* SVProgressHUD.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18A851BD1F6A0F7600B54130 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18A851C81F6A0F7600B54130 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A9B7AEFDAD77AB371D342A82 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YLChatDemo/Pods-YLChatDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D2B99B038CC7A138D4357F31 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DD418C16D391A3A45CDCB080 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YLChatDemo/Pods-YLChatDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		18A851A21F6A0F7600B54130 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18A852111F6A4EC600B54130 /* YLFriendsController.m in Sources */,
+				18A851EE1F6A147D00B54130 /* YLLogRegController.m in Sources */,
+				18A852171F6A518600B54130 /* YLNavigationController.m in Sources */,
+				18A851FA1F6A2EAF00B54130 /* JDStatusBarView.m in Sources */,
+				18A8521A1F6A542200B54130 /* UINavigationBar+Awesome.m in Sources */,
+				18A852201F6A5C9900B54130 /* YLFriendsCell.m in Sources */,
+				18A851B11F6A0F7600B54130 /* ViewController.m in Sources */,
+				18A852061F6A2ED100B54130 /* SVIndefiniteAnimatedView.m in Sources */,
+				18A851F81F6A2EAF00B54130 /* JDStatusBarNotification.m in Sources */,
+				18A8521D1F6A587300B54130 /* YLFriendModel.m in Sources */,
+				18A852071F6A2ED100B54130 /* SVProgressAnimatedView.m in Sources */,
+				18A851F91F6A2EAF00B54130 /* JDStatusBarStyle.m in Sources */,
+				18A852091F6A2ED100B54130 /* SVProgressHUD.m in Sources */,
+				182744DF1F6A75B8006184A1 /* YLMessageViewController.m in Sources */,
+				18A852141F6A514600B54130 /* YLTabBarController.m in Sources */,
+				18A851AE1F6A0F7600B54130 /* AppDelegate.m in Sources */,
+				18A851AB1F6A0F7600B54130 /* main.m in Sources */,
+				18A8520A1F6A2ED100B54130 /* SVRadialGradientLayer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18A851BB1F6A0F7600B54130 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18A851C41F6A0F7600B54130 /* YLChatDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18A851C61F6A0F7600B54130 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18A851CF1F6A0F7600B54130 /* YLChatDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		18A851C11F6A0F7600B54130 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18A851A51F6A0F7600B54130 /* YLChatDemo */;
+			targetProxy = 18A851C01F6A0F7600B54130 /* PBXContainerItemProxy */;
+		};
+		18A851CC1F6A0F7600B54130 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18A851A51F6A0F7600B54130 /* YLChatDemo */;
+			targetProxy = 18A851CB1F6A0F7600B54130 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		18A851B21F6A0F7600B54130 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18A851B31F6A0F7600B54130 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		18A851B71F6A0F7600B54130 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18A851B81F6A0F7600B54130 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		18A851D11F6A0F7600B54130 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/YLChatDemo/Classes/YLMain/Const/YLChat.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		18A851D21F6A0F7600B54130 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/YLChatDemo/Classes/YLMain/Const/YLChat.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		18A851D41F6A0F7600B54130 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B647E3F3018067D4424A6330 /* Pods-YLChatDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 363VLMZMY4;
+				INFOPLIST_FILE = YLChatDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = YLTC.YLChatDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		18A851D51F6A0F7600B54130 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7990F2657A5F8D3A8D772105 /* Pods-YLChatDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 363VLMZMY4;
+				INFOPLIST_FILE = YLChatDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = YLTC.YLChatDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		18A851D71F6A0F7600B54130 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 363VLMZMY4;
+				INFOPLIST_FILE = YLChatDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = YLTC.YLChatDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YLChatDemo.app/YLChatDemo";
+			};
+			name = Debug;
+		};
+		18A851D81F6A0F7600B54130 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 363VLMZMY4;
+				INFOPLIST_FILE = YLChatDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = YLTC.YLChatDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YLChatDemo.app/YLChatDemo";
+			};
+			name = Release;
+		};
+		18A851DA1F6A0F7600B54130 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 363VLMZMY4;
+				INFOPLIST_FILE = YLChatDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = YLTC.YLChatDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = YLChatDemo;
+			};
+			name = Debug;
+		};
+		18A851DB1F6A0F7600B54130 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 363VLMZMY4;
+				INFOPLIST_FILE = YLChatDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = YLTC.YLChatDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = YLChatDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		18A851A11F6A0F7600B54130 /* Build configuration list for PBXProject "YLChatDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18A851D11F6A0F7600B54130 /* Debug */,
+				18A851D21F6A0F7600B54130 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18A851D31F6A0F7600B54130 /* Build configuration list for PBXNativeTarget "YLChatDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18A851D41F6A0F7600B54130 /* Debug */,
+				18A851D51F6A0F7600B54130 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18A851D61F6A0F7600B54130 /* Build configuration list for PBXNativeTarget "YLChatDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18A851D71F6A0F7600B54130 /* Debug */,
+				18A851D81F6A0F7600B54130 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18A851D91F6A0F7600B54130 /* Build configuration list for PBXNativeTarget "YLChatDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18A851DA1F6A0F7600B54130 /* Debug */,
+				18A851DB1F6A0F7600B54130 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 18A8519E1F6A0F7600B54130 /* Project object */;
+}
