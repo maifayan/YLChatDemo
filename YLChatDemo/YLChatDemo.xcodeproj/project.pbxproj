@@ -8,6 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		182744DF1F6A75B8006184A1 /* YLMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 182744DE1F6A75B8006184A1 /* YLMessageViewController.m */; };
+		183AD88D1F6CB38900F3BD5C /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 183AD87E1F6CB38900F3BD5C /* LICENSE.txt */; };
+		183AD88E1F6CB38900F3BD5C /* README.markdown in Sources */ = {isa = PBXBuildFile; fileRef = 183AD87F1F6CB38900F3BD5C /* README.markdown */; };
+		183AD88F1F6CB38900F3BD5C /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 183AD8831F6CB38900F3BD5C /* FMDatabase.m */; };
+		183AD8901F6CB38900F3BD5C /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 183AD8851F6CB38900F3BD5C /* FMDatabaseAdditions.m */; };
+		183AD8911F6CB38900F3BD5C /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 183AD8871F6CB38900F3BD5C /* FMDatabasePool.m */; };
+		183AD8921F6CB38900F3BD5C /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 183AD8891F6CB38900F3BD5C /* FMDatabaseQueue.m */; };
+		183AD8931F6CB38900F3BD5C /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 183AD88C1F6CB38900F3BD5C /* FMResultSet.m */; };
+		183AD8951F6CB3A200F3BD5C /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 183AD8941F6CB3A200F3BD5C /* libsqlite3.tbd */; };
+		183AD8991F6CB5D500F3BD5C /* YLChatCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 183AD8981F6CB5D500F3BD5C /* YLChatCell.m */; };
+		183AD89C1F6CB7AC00F3BD5C /* XMGLongPressBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 183AD89B1F6CB7AC00F3BD5C /* XMGLongPressBtn.m */; };
+		183AD89F1F6CBA3800F3BD5C /* YLChat.m in Sources */ = {isa = PBXBuildFile; fileRef = 183AD89E1F6CBA3800F3BD5C /* YLChat.m */; };
+		183AD8A21F6CBA6300F3BD5C /* YLChatFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 183AD8A11F6CBA6300F3BD5C /* YLChatFrame.m */; };
+		183AD8A51F6CBD1600F3BD5C /* NSString+YFTimestamp.m in Sources */ = {isa = PBXBuildFile; fileRef = 183AD8A41F6CBD1600F3BD5C /* NSString+YFTimestamp.m */; };
+		183AD8A81F6CC74700F3BD5C /* UIImage+YFResizing.m in Sources */ = {isa = PBXBuildFile; fileRef = 183AD8A71F6CC74700F3BD5C /* UIImage+YFResizing.m */; };
 		18A851AB1F6A0F7600B54130 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A851AA1F6A0F7600B54130 /* main.m */; };
 		18A851AE1F6A0F7600B54130 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A851AD1F6A0F7600B54130 /* AppDelegate.m */; };
 		18A851B11F6A0F7600B54130 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A851B01F6A0F7600B54130 /* ViewController.m */; };
@@ -421,6 +435,32 @@
 /* Begin PBXFileReference section */
 		182744DD1F6A75B8006184A1 /* YLMessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLMessageViewController.h; sourceTree = "<group>"; };
 		182744DE1F6A75B8006184A1 /* YLMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLMessageViewController.m; sourceTree = "<group>"; };
+		183AD87E1F6CB38900F3BD5C /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		183AD87F1F6CB38900F3BD5C /* README.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.markdown; sourceTree = "<group>"; };
+		183AD8821F6CB38900F3BD5C /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		183AD8831F6CB38900F3BD5C /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		183AD8841F6CB38900F3BD5C /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		183AD8851F6CB38900F3BD5C /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		183AD8861F6CB38900F3BD5C /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		183AD8871F6CB38900F3BD5C /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		183AD8881F6CB38900F3BD5C /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		183AD8891F6CB38900F3BD5C /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		183AD88A1F6CB38900F3BD5C /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		183AD88B1F6CB38900F3BD5C /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		183AD88C1F6CB38900F3BD5C /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		183AD8941F6CB3A200F3BD5C /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		183AD8971F6CB5D500F3BD5C /* YLChatCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLChatCell.h; sourceTree = "<group>"; };
+		183AD8981F6CB5D500F3BD5C /* YLChatCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLChatCell.m; sourceTree = "<group>"; };
+		183AD89A1F6CB7AC00F3BD5C /* XMGLongPressBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGLongPressBtn.h; sourceTree = "<group>"; };
+		183AD89B1F6CB7AC00F3BD5C /* XMGLongPressBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGLongPressBtn.m; sourceTree = "<group>"; };
+		183AD89D1F6CBA3800F3BD5C /* YLChat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLChat.h; sourceTree = "<group>"; };
+		183AD89E1F6CBA3800F3BD5C /* YLChat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLChat.m; sourceTree = "<group>"; };
+		183AD8A01F6CBA6300F3BD5C /* YLChatFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLChatFrame.h; sourceTree = "<group>"; };
+		183AD8A11F6CBA6300F3BD5C /* YLChatFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLChatFrame.m; sourceTree = "<group>"; };
+		183AD8A31F6CBD1600F3BD5C /* NSString+YFTimestamp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+YFTimestamp.h"; sourceTree = "<group>"; };
+		183AD8A41F6CBD1600F3BD5C /* NSString+YFTimestamp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+YFTimestamp.m"; sourceTree = "<group>"; };
+		183AD8A61F6CC74700F3BD5C /* UIImage+YFResizing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+YFResizing.h"; sourceTree = "<group>"; };
+		183AD8A71F6CC74700F3BD5C /* UIImage+YFResizing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+YFResizing.m"; sourceTree = "<group>"; };
 		18A851A61F6A0F7600B54130 /* YLChatDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YLChatDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18A851AA1F6A0F7600B54130 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		18A851AC1F6A0F7600B54130 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -854,6 +894,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				183AD8951F6CB3A200F3BD5C /* libsqlite3.tbd in Frameworks */,
 				BC5F3392F8943A7165063F44 /* libPods-YLChatDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -875,6 +916,51 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		183AD87D1F6CB38900F3BD5C /* FMDB */ = {
+			isa = PBXGroup;
+			children = (
+				183AD87E1F6CB38900F3BD5C /* LICENSE.txt */,
+				183AD87F1F6CB38900F3BD5C /* README.markdown */,
+				183AD8801F6CB38900F3BD5C /* src */,
+			);
+			path = FMDB;
+			sourceTree = "<group>";
+		};
+		183AD8801F6CB38900F3BD5C /* src */ = {
+			isa = PBXGroup;
+			children = (
+				183AD8811F6CB38900F3BD5C /* fmdb */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		183AD8811F6CB38900F3BD5C /* fmdb */ = {
+			isa = PBXGroup;
+			children = (
+				183AD8821F6CB38900F3BD5C /* FMDatabase.h */,
+				183AD8831F6CB38900F3BD5C /* FMDatabase.m */,
+				183AD8841F6CB38900F3BD5C /* FMDatabaseAdditions.h */,
+				183AD8851F6CB38900F3BD5C /* FMDatabaseAdditions.m */,
+				183AD8861F6CB38900F3BD5C /* FMDatabasePool.h */,
+				183AD8871F6CB38900F3BD5C /* FMDatabasePool.m */,
+				183AD8881F6CB38900F3BD5C /* FMDatabaseQueue.h */,
+				183AD8891F6CB38900F3BD5C /* FMDatabaseQueue.m */,
+				183AD88A1F6CB38900F3BD5C /* FMDB.h */,
+				183AD88B1F6CB38900F3BD5C /* FMResultSet.h */,
+				183AD88C1F6CB38900F3BD5C /* FMResultSet.m */,
+			);
+			path = fmdb;
+			sourceTree = "<group>";
+		};
+		183AD8961F6CB59900F3BD5C /* YLChatCell */ = {
+			isa = PBXGroup;
+			children = (
+				183AD8971F6CB5D500F3BD5C /* YLChatCell.h */,
+				183AD8981F6CB5D500F3BD5C /* YLChatCell.m */,
+			);
+			path = YLChatCell;
+			sourceTree = "<group>";
+		};
 		18A8519D1F6A0F7600B54130 = {
 			isa = PBXGroup;
 			children = (
@@ -976,6 +1062,10 @@
 			children = (
 				18D5C5391F6BB5A300916D0F /* YLChatModel.h */,
 				18D5C53A1F6BB5A300916D0F /* YLChatModel.m */,
+				183AD89D1F6CBA3800F3BD5C /* YLChat.h */,
+				183AD89E1F6CBA3800F3BD5C /* YLChat.m */,
+				183AD8A01F6CBA6300F3BD5C /* YLChatFrame.h */,
+				183AD8A11F6CBA6300F3BD5C /* YLChatFrame.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -983,6 +1073,9 @@
 		18A851E01F6A138D00B54130 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				183AD89A1F6CB7AC00F3BD5C /* XMGLongPressBtn.h */,
+				183AD89B1F6CB7AC00F3BD5C /* XMGLongPressBtn.m */,
+				183AD8961F6CB59900F3BD5C /* YLChatCell */,
 				18D5C19E1F6B9F9400916D0F /* YLMessageInputBar */,
 			);
 			path = View;
@@ -1037,6 +1130,10 @@
 		18A851E61F6A138D00B54130 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				183AD8A61F6CC74700F3BD5C /* UIImage+YFResizing.h */,
+				183AD8A71F6CC74700F3BD5C /* UIImage+YFResizing.m */,
+				183AD8A31F6CBD1600F3BD5C /* NSString+YFTimestamp.h */,
+				183AD8A41F6CBD1600F3BD5C /* NSString+YFTimestamp.m */,
 				18D5C5361F6BB45C00916D0F /* UIResponder+Router.h */,
 				18D5C5371F6BB45C00916D0F /* UIResponder+Router.m */,
 				18A852181F6A542200B54130 /* UINavigationBar+Awesome.h */,
@@ -1067,6 +1164,7 @@
 		18A851E91F6A138D00B54130 /* Lib */ = {
 			isa = PBXGroup;
 			children = (
+				183AD87D1F6CB38900F3BD5C /* FMDB */,
 				18D5C1A21F6BA2D700916D0F /* PureLayout */,
 				18A851FB1F6A2ED100B54130 /* SVProgressHUD */,
 				18A851F11F6A2EAF00B54130 /* JDStatusBarNotification */,
@@ -3007,6 +3105,7 @@
 		1A8B8998903A60E65F2E12D4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				183AD8941F6CB3A200F3BD5C /* libsqlite3.tbd */,
 				59494D68BF6A00540E84D07F /* libPods-YLChatDemo.a */,
 			);
 			name = Frameworks;
@@ -3470,6 +3569,7 @@
 				18D5C5201F6BA81100916D0F /* 136@2x.png in Resources */,
 				18D5C3FE1F6BA81100916D0F /* chat_bottom_keyboard_nor@3x.png in Resources */,
 				18D5C4111F6BA81100916D0F /* Contents.json in Resources */,
+				183AD88D1F6CB38900F3BD5C /* LICENSE.txt in Resources */,
 				18D5C4BC1F6BA81100916D0F /* 086@2x.png in Resources */,
 				18D5C4EC1F6BA81100916D0F /* 110@2x.png in Resources */,
 				18D5C3D81F6BA81100916D0F /* aio_icons_doodle@3x.png in Resources */,
@@ -3572,11 +3672,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				18A852111F6A4EC600B54130 /* YLFriendsController.m in Sources */,
+				183AD88E1F6CB38900F3BD5C /* README.markdown in Sources */,
 				18A851EE1F6A147D00B54130 /* YLLogRegController.m in Sources */,
 				18A852171F6A518600B54130 /* YLNavigationController.m in Sources */,
 				18D5C1AC1F6BA2D700916D0F /* ALView+PureLayout.m in Sources */,
 				18A851FA1F6A2EAF00B54130 /* JDStatusBarView.m in Sources */,
 				18A8521A1F6A542200B54130 /* UINavigationBar+Awesome.m in Sources */,
+				183AD89F1F6CBA3800F3BD5C /* YLChat.m in Sources */,
 				18D5C53B1F6BB5A300916D0F /* YLChatModel.m in Sources */,
 				18A852201F6A5C9900B54130 /* YLFriendsCell.m in Sources */,
 				18A851B11F6A0F7600B54130 /* ViewController.m in Sources */,
@@ -3584,17 +3686,27 @@
 				18D5C5381F6BB45C00916D0F /* UIResponder+Router.m in Sources */,
 				18A851F81F6A2EAF00B54130 /* JDStatusBarNotification.m in Sources */,
 				18D5C1AD1F6BA2D700916D0F /* NSArray+PureLayout.m in Sources */,
+				183AD8A51F6CBD1600F3BD5C /* NSString+YFTimestamp.m in Sources */,
 				18A8521D1F6A587300B54130 /* YLFriendModel.m in Sources */,
+				183AD8A81F6CC74700F3BD5C /* UIImage+YFResizing.m in Sources */,
+				183AD88F1F6CB38900F3BD5C /* FMDatabase.m in Sources */,
 				18A852071F6A2ED100B54130 /* SVProgressAnimatedView.m in Sources */,
 				18A851F91F6A2EAF00B54130 /* JDStatusBarStyle.m in Sources */,
 				18A852091F6A2ED100B54130 /* SVProgressHUD.m in Sources */,
+				183AD8A21F6CBA6300F3BD5C /* YLChatFrame.m in Sources */,
 				18D5C1AE1F6BA2D700916D0F /* NSLayoutConstraint+PureLayout.m in Sources */,
 				182744DF1F6A75B8006184A1 /* YLMessageViewController.m in Sources */,
 				18A852141F6A514600B54130 /* YLTabBarController.m in Sources */,
 				18D5C1A11F6B9FBC00916D0F /* YLMessageInputBar.m in Sources */,
+				183AD8901F6CB38900F3BD5C /* FMDatabaseAdditions.m in Sources */,
+				183AD8931F6CB38900F3BD5C /* FMResultSet.m in Sources */,
+				183AD89C1F6CB7AC00F3BD5C /* XMGLongPressBtn.m in Sources */,
 				18A851AE1F6A0F7600B54130 /* AppDelegate.m in Sources */,
+				183AD8911F6CB38900F3BD5C /* FMDatabasePool.m in Sources */,
 				18A851AB1F6A0F7600B54130 /* main.m in Sources */,
 				18A8520A1F6A2ED100B54130 /* SVRadialGradientLayer.m in Sources */,
+				183AD8991F6CB5D500F3BD5C /* YLChatCell.m in Sources */,
+				183AD8921F6CB38900F3BD5C /* FMDatabaseQueue.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

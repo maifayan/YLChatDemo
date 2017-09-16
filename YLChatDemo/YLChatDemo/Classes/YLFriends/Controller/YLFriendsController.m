@@ -88,7 +88,7 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     YLFriendsCell *cell = [tableView cellForRowAtIndexPath:indexPath];// 获取cell 对象
     //对方
-    [[NSUserDefaults standardUserDefaults] setObject:cell.userId forKey:@"toUser"];
+    [[NSUserDefaults standardUserDefaults] setObject:cell.userId forKey:@"toID"];
     NSData *data = UIImageJPEGRepresentation(cell.headView.image, 1.0f);
     [[NSUserDefaults standardUserDefaults] setObject:data  forKey:@"toHeadimg"];
     [[NSUserDefaults standardUserDefaults]setObject:cell.nickName.text forKey:@"toNickname"];

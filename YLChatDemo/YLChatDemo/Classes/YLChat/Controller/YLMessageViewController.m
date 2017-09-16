@@ -9,13 +9,20 @@
 #import "YLMessageViewController.h"
 #import "YLMessageInputBar.h"
 #import "PureLayout.h"
+#import "YLChatCell.h"
+#import "YLChatFrame.h"
+
 
 #define YLInputViewH 46
 @interface YLMessageViewController ()<UITableViewDelegate,UITableViewDataSource>
 
+//显示聊天内容
 @property (nonatomic ,strong) UITableView *tableView;
-
+//输入框
 @property (nonatomic ,strong) YLMessageInputBar *inputBar;
+
+//聊天记录
+@property (nonatomic,copy) NSMutableArray *dataArray;
 
 @end
 
@@ -34,7 +41,9 @@
     
     // 监听键盘弹出,对相应的布局做修改
     [self xmg_observerKeyboardFrameChange];
-
+    
+    //点击空白区域取消
+//    [self setupTapGestureRecognizer];
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -42,8 +51,12 @@
     [super viewWillAppear:animated];
     self.navigationController.tabBarController.tabBar.hidden = YES;
     
-
-    
+}
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    //解决第一次进入Vc的时候,未滚动到最底部
+    [self  tableViewScrollToBottom];
     
 }
 
@@ -53,7 +66,19 @@
     self.navigationController.tabBarController.tabBar.hidden = NO;
     
 }
-
+#pragma mark - 点击空白区域键盘收回
+- (void)setupTapGestureRecognizer{
+    /**
+     点击 空白区域取消
+     */
+    UITapGestureRecognizer *singleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(fingerTapped:)];
+    
+    [self.view addGestureRecognizer:singleTap];
+}
+-(void)fingerTapped:(UITapGestureRecognizer *)gestureRecognizer
+{
+    [self.view endEditing:YES];
+}
 
 
 #pragma mark - Table view data source
@@ -65,28 +90,27 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     
-    return 0;
+    return self.dataArray.count;
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-//    YLFriendsCell *cell = [YLFriendsCell YLCellWithTableView:tableView];
-//    cell.friendMoel     =  self.friendArray[indexPath.row];
-//    cell.selectionStyle = UITableViewCellSelectionStyleNone;
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([UITableViewCell class]) forIndexPath:indexPath];
+
+    YLChatCell *cell = [YLChatCell YLCellWithTableView:tableView];
+    cell.chatFrame     =  self.dataArray[indexPath.row];
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
     return cell;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return 80;
+    return [self.dataArray[indexPath.row] cellH];
 }
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    
-    
-    
-    //    self.navigationController pushViewController:<#(nonnull UIViewController *)#> animated:<#(BOOL)#>
+
+- (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView{
+    [self.view endEditing:YES];
 }
+
 
 #pragma mark - 私有方法
 - (void)xmg_observerKeyboardFrameChange
@@ -122,6 +146,16 @@
                                                       
                                                   }];
 }
+
+//tableView Scroll to bottom
+- (void)tableViewScrollToBottom
+{
+    if (self.dataArray.count==0)
+        return;
+    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:self.dataArray.count-1 inSection:0];
+    [self.tableView scrollToRowAtIndexPath:indexPath atScrollPosition:UITableViewScrollPositionBottom animated:YES];
+}
+
 
 
 #pragma mark - 懒加载

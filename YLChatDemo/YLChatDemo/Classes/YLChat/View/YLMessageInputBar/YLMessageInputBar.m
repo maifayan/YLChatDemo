@@ -418,7 +418,7 @@
         if (![textView.text isEqualToString:@""])
         {//输入框当前有数据才需要发送
             
-//            [self sendMessageContent:textView.text];
+            [self sendMessageContent:textView.text];
             
             [textView resignFirstResponder];
             
@@ -459,7 +459,7 @@
 }
 
 -(void)sendMessageContent:(NSString *)text {
-    if (!text) {
+    if (!text) {//保险起见，再多加一个判断，输入框为空，就不发送消息
         return;
     }
     AFHTTPSessionManager *mgr = [AFHTTPSessionManager manager];
