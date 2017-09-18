@@ -71,11 +71,11 @@
     contentH = contentStrSize.height;
     if (chat.isMe) {
         iconX  = screenW - margin - iconW;
-        nickNameX = screenW - margin - iconW *0.5 - 5;
+        nickNameX = screenW - margin * 2 - iconW;
         contentX  = iconX - margin - contentW;
     }else{
         iconX = margin;
-        nickNameX = margin + iconW *0.5 - 5;
+        nickNameX = -margin;
         contentX  = iconX + iconW + margin;
     }
     self.iconFrame  = CGRectMake(iconX, iconY, iconW, iconH);

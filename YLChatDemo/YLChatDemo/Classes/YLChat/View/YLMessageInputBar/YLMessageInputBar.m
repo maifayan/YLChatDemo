@@ -110,20 +110,8 @@
         [_mMoreBtn autoPinEdgeToSuperviewEdge:ALEdgeTrailing withInset:0];
         [_mMoreBtn  autoPinEdge:ALEdgeLeading toEdge:ALEdgeTrailing ofView:self.mFaceBtn withOffset:0];
         
-        
-        /**
-         *  @brief  监听键盘显示、隐藏变化，让自己伴随键盘移动
-         */
-//        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardChange:) name:UIKeyboardWillShowNotification object:nil];
-//        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardChange:) name:UIKeyboardWillHideNotification object:nil];
-        
     }
     return self;
-}
-
--(void)dealloc
-{
-//    [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
 //获取自己和父控件底部约束，控制该约束可以让自己伴随键盘移动
@@ -317,7 +305,6 @@
         [_mMoreBtn autoSetDimensionsToSize:kSizeBtn];
     }
     
-    
     return _mMoreBtn;
 }
 
@@ -407,6 +394,7 @@
 //    {
 //        [self faceBtnClick:self.mFaceBtn];
 //    }
+    
 }
 
 //判断用户是否点击了键盘发送按钮
@@ -465,8 +453,8 @@
     AFHTTPSessionManager *mgr = [AFHTTPSessionManager manager];
     NSMutableDictionary *dic = [NSMutableDictionary dictionary];
     NSString *timeSp = [self getNowTimeTimestamp3];
-    dic[@"fromUser"] = [[NSUserDefaults standardUserDefaults] valueForKey:@"fromUser"];
-    dic[@"toUser"]   = [[NSUserDefaults standardUserDefaults] valueForKey:@"toUser"];
+    dic[@"fromUser"] = [[NSUserDefaults standardUserDefaults] valueForKey:@"fromID"];
+    dic[@"toUser"]   = [[NSUserDefaults standardUserDefaults] valueForKey:@"toID"];
     dic[@"content"]  = text;
     dic[@"timeStamp"]= timeSp;
     NSString *urlStr = [NSString stringWithFormat:@"%@message/send",YLUrl];
