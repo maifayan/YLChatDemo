@@ -353,7 +353,7 @@
         _mInputTextView.delegate = self;//设置代理
         //输入框边界条件
         _mInputTextView.layer.cornerRadius = 4;
-        _mInputTextView.layer.masksToBounds = YES;
+        _mInputTextView.layer.masksToBounds = YES;//masksToBounds 视图的图层上的子图层，超出父图层的部分就截取掉
         _mInputTextView.layer.borderWidth = 1;
         _mInputTextView.layer.borderColor = [[[UIColor lightGrayColor] colorWithAlphaComponent:0.4] CGColor];
         //输入框滑动约束条件

@@ -10,7 +10,7 @@
 #define YLChat_pch
 
 
-#define YLUrl  @"http://192.168.0.120:8080/"
+#define YLUrl  @"http://192.168.0.114:8081/"
 #import <AFNetworking.h>
 #import "SVProgressHUD.h"
 #import "JDStatusBarNotification.h"

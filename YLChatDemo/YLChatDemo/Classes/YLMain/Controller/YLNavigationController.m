@@ -17,11 +17,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self.navigationBar lt_setBackgroundColor: [UIColor blackColor]];
+//    [self.navigationBar lt_setBackgroundColor: [UIColor blackColor]];
+    [self.navigationBar setBackgroundColor:[UIColor blackColor]];
     // 修改标题颜色
     self.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName: [UIColor whiteColor]};
     // 修改左右UIBarButtonItem主题色
     self.navigationBar.tintColor = [UIColor whiteColor];
+    
 }
 
 // 修改状态栏格式

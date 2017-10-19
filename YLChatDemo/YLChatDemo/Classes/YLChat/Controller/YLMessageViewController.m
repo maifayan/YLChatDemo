@@ -43,9 +43,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.title = [[NSUserDefaults standardUserDefaults] valueForKey:@"toNickname"];
-    self.navigationController.navigationBar.titleTextAttributes =@{NSForegroundColorAttributeName:[UIColor whiteColor],NSFontAttributeName:[UIFont boldSystemFontOfSize:17]};
+    self.navigationItem.title = [[NSUserDefaults standardUserDefaults] valueForKey:@"toNickname"];
     
+
     
     //添加子控件
     UIEdgeInsets inset = UIEdgeInsetsMake(0, 0, 0, 0);
@@ -89,6 +89,7 @@
     [super viewWillDisappear:animated];
     self.navigationController.tabBarController.tabBar.hidden = NO;
     
+
     // Close WebSocket
     self.webSocket.delegate = nil;
     [self.webSocket close];
@@ -130,7 +131,6 @@
     
     self.dataDic = [NSMutableDictionary dictionary];
     self.dataDic = [self parseJSONStringToNSDictionary:message];
-    NSLog(@"self.dataDic =>=>=> %@",self.dataDic);
     [self insert];
     
 }
@@ -184,7 +184,6 @@
     FMResultSet *resultSet = [self.database executeQuery:@"SELECT * FROM compontentStr"];
     // 2.遍历结果
     NSMutableDictionary *resultDic = (NSMutableDictionary *)resultSet;
-    NSLog(@"resultDic =>=>=> %@",resultDic);
     while ([resultSet next]) {
         YLChat *chat = [[YLChat alloc]init];
         chat.mesag = resultDic;

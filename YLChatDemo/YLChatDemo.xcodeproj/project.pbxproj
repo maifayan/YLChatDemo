@@ -411,7 +411,6 @@
 		18D5C5341F6BA81100916D0F /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = 18D5C3CC1F6BA81100916D0F /* Contents.json */; };
 		18D5C5351F6BA81100916D0F /* qvip_emoji_tab_store@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18D5C3CD1F6BA81100916D0F /* qvip_emoji_tab_store@2x.png */; };
 		18D5C5381F6BB45C00916D0F /* UIResponder+Router.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D5C5371F6BB45C00916D0F /* UIResponder+Router.m */; };
-		18D5C53B1F6BB5A300916D0F /* YLChatModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D5C53A1F6BB5A300916D0F /* YLChatModel.m */; };
 		BC5F3392F8943A7165063F44 /* libPods-YLChatDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 59494D68BF6A00540E84D07F /* libPods-YLChatDemo.a */; };
 /* End PBXBuildFile section */
 
@@ -882,8 +881,6 @@
 		18D5C3CD1F6BA81100916D0F /* qvip_emoji_tab_store@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qvip_emoji_tab_store@2x.png"; sourceTree = "<group>"; };
 		18D5C5361F6BB45C00916D0F /* UIResponder+Router.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIResponder+Router.h"; sourceTree = "<group>"; };
 		18D5C5371F6BB45C00916D0F /* UIResponder+Router.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIResponder+Router.m"; sourceTree = "<group>"; };
-		18D5C5391F6BB5A300916D0F /* YLChatModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLChatModel.h; sourceTree = "<group>"; };
-		18D5C53A1F6BB5A300916D0F /* YLChatModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLChatModel.m; sourceTree = "<group>"; };
 		59494D68BF6A00540E84D07F /* libPods-YLChatDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YLChatDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7990F2657A5F8D3A8D772105 /* Pods-YLChatDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YLChatDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-YLChatDemo/Pods-YLChatDemo.release.xcconfig"; sourceTree = "<group>"; };
 		B647E3F3018067D4424A6330 /* Pods-YLChatDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YLChatDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YLChatDemo/Pods-YLChatDemo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -1060,8 +1057,6 @@
 		18A851DF1F6A138D00B54130 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				18D5C5391F6BB5A300916D0F /* YLChatModel.h */,
-				18D5C53A1F6BB5A300916D0F /* YLChatModel.m */,
 				183AD89D1F6CBA3800F3BD5C /* YLChat.h */,
 				183AD89E1F6CBA3800F3BD5C /* YLChat.m */,
 				183AD8A01F6CBA6300F3BD5C /* YLChatFrame.h */,
@@ -3679,7 +3674,6 @@
 				18A851FA1F6A2EAF00B54130 /* JDStatusBarView.m in Sources */,
 				18A8521A1F6A542200B54130 /* UINavigationBar+Awesome.m in Sources */,
 				183AD89F1F6CBA3800F3BD5C /* YLChat.m in Sources */,
-				18D5C53B1F6BB5A300916D0F /* YLChatModel.m in Sources */,
 				18A852201F6A5C9900B54130 /* YLFriendsCell.m in Sources */,
 				18A851B11F6A0F7600B54130 /* ViewController.m in Sources */,
 				18A852061F6A2ED100B54130 /* SVIndefiniteAnimatedView.m in Sources */,
